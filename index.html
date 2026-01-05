@@ -1,81 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Latest compiled and minified CSS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delius&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Shadows+Into+Light+Two&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Walter+Turncoat&display=swap" rel="stylesheet">
+<style>
+	#navColor {
+    background-color: #0b4c86; /* Blue */
+}
+	#textcolor {
+	color: white;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+	#homefont {
+		 font-family: "Emblema One";
+		 font-weight: 400;
+		 font-style: normal;
+		 color: #022244;
+		
+	}
+
+	body {
+		background-color: #ededed;
+	}
+</style>
+
+
+
+
+
 </head>
 <body>
-    <div class="delius-regular">   
-        <nav class="navbar navbar-expand-sm navbar-dark">
+
+        <nav id="navColor" class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> 
+                    <img src="Logo.png" alt="Logo" height="50px" width="50px">
+                </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span> 
+                                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEW6KZtvxvN1k7KafTacnN6EaRYnz1BrI%2Fvzn287ZjXstd17iiq8IZ1%2BeD2aymzqfJYQ%2FeKRWNtjTU6wuLwtAi%2BzZW7aJbeYgKCy3QnB9Ywoa8eQ2h2Rr399i7o31p41aej02DKlCed6gyqfsbZnvQow2tL1G8X1t8Zhzpa3RCQBKKCuKzXP8J4GfIzoQHC52u9KLefjuyiWr4hcgooY7jmGGF%2Bjoe8mcNc5mUCUqz8jkIsxo3zFMhnrsxXceYDj8DVgi5e%2B6Jt1s%2FHKtXben%2Bls7NXh00i8Run6mznPl%2FY5OVurZXBHW2SAVkvyI0tb%2FB2%2B1b4GJCoK2%2Bxxcm8V1hbzIlkd3hUy%2FdT3iLpw1rrX3JeohgPPbB6SY9EExMV6ThtpXsl%2BYvum%2FIGG6bMo3tDa3F6Yeo5vWAO4n7rM2t6LqGHUOpb%2BB%2BTSXMvPCalbn8CJnWOF66DxwKmbRo1Zwx%2FQNpWVZBBC24iV2%2FqZxeLIR0zAaJuQjYkMsdy7wufGTcdAI87zcWjr%2F7Nb9WtjXv9f7N%2FfhyMi4vRawSBsMTwXJzjQL9dVBqQ%2BbMcdTsJV%2F6WZVlLTikK7c8dXu0iDwj8ubUsAM1tF%2Bw%3D%3D&allow_caching=true&sz=w1920-h946-rw" alt="Logo" style="width:40px;" class="rounded-pill">
-                    O.B. Montessori Center
+                    <img src="Logo.png" alt="Avatar Logo" style="width:40px;"> O.B. MONTESSORI CENTER
                 </a>
-                <botton class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </botton>
-                <div class="colapse navbar-collapse">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home-section">Home</a>
-                        </li>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <li class="nav-item"><a class="nav-link" href="#programs-section">Programs</a> 
-                        </li>
+                            <li class="nav-item"> <a id="textcolor"class="nav-link" href="index.html" target="_self">Home</a></li>
+                            <li class="nav-item"> <a id="textcolor" class="nav-link" href="about.html" target="_self">Courses</a></li>
+                            <li class="nav-item"> <a id="textcolor" class="nav-link" href="enroll.html" target="_self">Enroll</a></li>
+                            <li class="nav-item"> <a id="textcolor" class="nav-link" href="contact.html" target="_self">Our Team</a></li>
+                            <li class="nav-item"> <a id="textcolor" class="nav-link" href="contact.html" target="_self">Contact Us</a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="#contact-section">Contact Us</a>
-                        </li>
 
-                        <li class="nav-item"><a class="nav-link" href="#enroll-section">Enroll</a>
-                        </li>
+						</ul>
+                        <form class="d-flex">
+                            <button style="width: 200px;" class="btn btn-primary" type="button">My Portal</button>
+                        </form>
+                    </div>
+        </nav>       
 
-                        <li class="nav-item"><a class="nav-link" href="#about-section">About Us</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="text" placeholder="Search">
-                    <button class="btn btn-primary" type="button">Search</button>
-                </form>
+                <div style="background-image: url(BG.png);" class="container-fluid mt-3">
+                    <div class="container p-5 mt-3 text-dark">
+                        <h2 id="homefont">Join our</h2>
+						<h1 id="homefont" style="margin-left: 20px;">Montessori</h1>
+						<h2 id="homefont">Community</h2> <hr>
+                            <p style="color: #022244;">
+								Operation Brotherhood Montessori Center has been a pioneer in progressive education since 1966, inspiring children to become independent thinkers and lifelong learners.                            </p>
+                    </div>
                 </div>
+
             </div>
+
         </nav>
 
-        <div class="container-fluid mt-3">
-            <div class="container p-5 bg-light text-dark">
-                <h2>Programs</h2><hr>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/f367c9fa-eafd-4481-ad5e-3f7bf6069fc6/O.B.+Montessori+Center%2C+Casa+Program?format=2500w" width="290px" class="rounded">
-                        <p>Casa/Kindergarden (Ages 3-6)</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/15317fb6-cf4e-441e-9094-7c11c26b4fd2/O.B.+Montessori+Center%2C+Primary+Program?format=2500w" width="290px" class="rounded">
-                        <p>Primary Grade School (Ages 6-8)</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/c6e672dc-a481-443e-ba44-0c997e79147a/O.B.+Montessori+Center%2C+Intermediate+Program?format=2500w" width="290px" class="rounded">
-                        <p>Intermediate Grade School (Ages 9-12)</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/be8a19b1-6fa9-4d93-83f3-cccbfed8c577/JAR_3329a.jpg?format=2500w" width="290px" class="rounded">
-                        <p>Junior High School (Ages 13-16)</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/94a0554e-f0cc-4c44-a0b2-7cb83b863254/SENIOR+HIGH+SCHOOL++PROGRAM+-+HERO+IMAGE+-+RAF09579.JPG?format=2500w" width="290px" class="rounded">
-                        <p>Senior High School (Ages 17-18)</p>
-                    </div>
-                </div>
-        </div>
-    </div> 
+	<div class="container-fluid mt-3">
+		<div style="height: 400px;" class="container bg-light text-dark p-5">
+			<img style="width: 500px; height: 350px; float: right; margin-right: 50px;" src="idk.png" alt="">
+				<h2 id="homefont">Raising future leaders</h2>
+					<div style="width: 900px;">
+						<p style="margin-top: 50px;">
+							Since 1966, OB Montessori Center has been at the forefront of progressive education, utilizing the Montessori method with traditional and innovative practices.
+						</p>	
+<br>
+						<p>
+						Our school provides a nurturing learning environment where students from pre-school to Senior High School develop independence, leadership, creativity, and critical thinking skills.
+						</p>
+					</div>	
+		
+		</div>	
+	</div>
+
 </body>
 </html>
